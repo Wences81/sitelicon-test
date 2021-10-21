@@ -5,26 +5,26 @@ fetch('http://sitelicon.eu/test/ajax_localidades.php')
         let jsObj = json
         for (let key in jsObj) {
 
-            let countryOption = document.createElement('option');
-            let countrySelect = document.getElementById('countrySelect');
+            let provinciasOption = document.createElement('option');
+            let provinciasSelect = document.getElementById('provincias');
 
-            countryOption.innerHTML = key;
-            countrySelect.appendChild(countryOption);
+            provinciasOption.innerHTML = key;
+            provinciasSelect.appendChild(provinciasOption);
 
 
         }
-        document.querySelector('#countrySelect').addEventListener('change', function () { // Замыкание
-            let cities = jsObj[this.value]
+        document.querySelector('#provincias').addEventListener('change', function () { 
+            let localidades = jsObj[this.value]
 
-            citySelect.length = 0;
+            localidadesSelect.length = 0;
 
-            for (const iterator of cities) {
+            for (const iterator of localidades) {
 
-                let cityOption = document.createElement('option');
-                let citySelect = document.getElementById('citySelect');
+                let localidadesOption = document.createElement('option');
+                let localidadesSelect = document.getElementById('localidades');
 
-                cityOption.innerHTML = iterator;
-                citySelect.appendChild(cityOption);
+                localidadesOption.innerHTML = iterator;
+                localidadesSelect.appendChild(localidadesOption);
 
             }
         });
