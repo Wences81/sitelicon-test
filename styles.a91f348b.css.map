@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,KACE,6BAA8B,CACtB,qBACV,CAEA,iBAGE,0BAA2B,CACnB,kBACV","file":"styles.a91f348b.css","sourceRoot":"../src","sourcesContent":["html {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n\n*,\n*::before,\n*::after {\n  -webkit-box-sizing: inherit;\n          box-sizing: inherit;\n}"]}
