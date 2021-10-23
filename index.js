@@ -3,7 +3,10 @@ const BASE_URL = 'http://sitelicon.eu/test/ajax_localidades.php';
 function fetchProvincias(optoin) {
     return fetch(`${BASE_URL}/option/${option}`).then((response) =>
         response.json(),
+
     );
+   
+
     
 
 }
