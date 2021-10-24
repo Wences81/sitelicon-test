@@ -1,14 +1,27 @@
+
 html {
-  
-          box-sizing: border-box;
+  box-sizing: border-box;
+     height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+}
+
+body {
+     height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
 }
 
 *,
 *::before,
 *::after {
-  
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
+
+
+
 
 
 
@@ -29,12 +42,38 @@ select {
 }
 
 
+.site-nav list {
+ display: flex;
+}
+
+.item {
+  display: block;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1199px;
+  
   margin-left: auto;
   margin-right: auto;
+  border: solid 1px;
+  border-color: rgb(93, 118, 190);:rgb(93, 118, 190)
+}
+ } 
+
+@media screen and (min-width: 1200px) {
+.container {
+  max-width: 1200px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px;
+  border-color: rgb(93, 118, 190);:rgb(93, 118, 190)
+}
 }
 
 h1 {
@@ -60,12 +99,92 @@ h1 {
 }
 
 .main-item {
-  padding-left: 40px;
+max-width: 470px;
+
+padding-left: 43px;  
+list-style: none;
+}
+
+.main-item:first-child {
+border-right: solid 1px;
+border-color: rgb(93, 118, 190);
+}
+
+.menu-item {
+  padding-left: 0px;
   padding-bottom: auto;
-  list-style: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.6px;
+  color: rgb(93, 118, 190);
 }
 
 .menu-list {
-  padding-top: 60px;
-padding-right: 120px;
+max-height: auto;  
+padding-top: 30px;
+padding-right: 150px;
+
+}
+
+.cuadro1 {
+  margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 145px;
+  background-color: rgb(185, 206, 245);
+}
+
+.cuadro2 {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  background-color: rgb(201, 216, 245);
+}
+
+.titulo-cuadro {
+  margin: 0;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 1.87;
+  letter-spacing: 0.6px;
+  color: #fff;
+  border-bottom: solid  3px;
+}
+
+.text-cuadro {
+  text-align: justify;
+  margin-top: 20px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.6px;
+  color: rgb(93, 118, 190);
+}
+
+
+
+
+.footer {
+   width: 100vw;
+  
+  margin-top: 40px;
+ 
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: black;
+
+}
+
+.text-footer {
+  
+  text-align: center;
+  color: #fff;
 }
